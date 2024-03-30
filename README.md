@@ -1,10 +1,14 @@
-## SimSID: Exploiting Structural Consistency of Chest Anatomy for Unsupervised Anomaly Detection in Radiography Images</sub>
-
-### [Paper](https://arxiv.org/pdf/2403.08689.pdf)
 
 This repo contains PyTorch training/test code for our paper exploring structural consistency in unsupervised anomaly detection.
 
-Radiography imaging protocols focus on particular body regions, therefore producing images of great similarity and yielding recurrent anatomical structures across patients. Exploiting this structured information could potentially ease the detection of anomalies from radiography images. To this end, we propose a Simple Space-Aware Memory Matrix for In-painting and Detecting anomalies from radiography images (abbreviated as SimSID). We formulate anomaly detection as an image reconstruction task, consisting of a space-aware memory matrix and an in-painting block in the feature space. During the training, SimSID can taxonomize the ingrained anatomical structures into recurrent visual patterns, and in the inference, it can identify anomalies (unseen/modified visual patterns) from the test image. Our SimSID surpasses the state of the arts in unsupervised anomaly detection by +8.0%, +5.0%, and +9.9% AUC scores on ZhangLab, COVIDx, and CheXpert benchmark datasets, respectively.
+## Paper
+
+<b>Exploiting Structural Consistency of Chest Anatomy for Unsupervised Anomaly Detection in Radiography Images</b> <br/>
+[Tiange Xiang](), [Yixiao Zhang](), [Yongyi Li](), [Alan Yuille](https://www.cs.jhu.edu/~ayuille/), [Chaoyi Zhang](), [Weidong Cai](), and [Zongwei Zhou](https://www.zongweiz.com/)<sup>*</sup> <br/>
+Johns Hopkins University  <br/>
+International Conference on Learning Representations (ICLR) 2024 (oral; top 1.2%) <br/>
+[paper](https://www.cs.jhu.edu/~alanlab/Pubs23/li2023suprem.pdf) | [code](https://github.com/MrGiovanni/SuPreM) | [slides](document/promotion_slides.pdf) | [poster](document/dom_wse_poster.pdf) | [talk](https://vtizr.xetslk.com/s/1HUGNo
+) | [news](https://www.cs.jhu.edu/news/ai-and-radiologists-unite-to-map-the-abdomen/)
 
 ## Training
 
