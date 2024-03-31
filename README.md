@@ -1,14 +1,25 @@
+This repo provides official code for SimSID, a significant technical improvement over our previous CVPR version (SQUID) in exploring structural consistency for **unsupervised anomaly detection**.
 
-This repo contains PyTorch training/test code for our paper exploring structural consistency in unsupervised anomaly detection.
+<div align="center">
+ 
+![logo](document/fig_introductory.png)  
+</div>
+
+Anomaly detection in radiography images can be both easier and harder than photographic images. It is easier because radiography images are spatially structured due to consistent imaging protocols. It is harder because anomalies are subtle and require medical expertise to annotate.
 
 ## Paper
 
 <b>Exploiting Structural Consistency of Chest Anatomy for Unsupervised Anomaly Detection in Radiography Images</b> <br/>
-[Tiange Xiang](), [Yixiao Zhang](), [Yongyi Li](), [Alan Yuille](https://www.cs.jhu.edu/~ayuille/), [Chaoyi Zhang](), [Weidong Cai](), and [Zongwei Zhou](https://www.zongweiz.com/)<sup>*</sup> <br/>
-Johns Hopkins University  <br/>
-International Conference on Learning Representations (ICLR) 2024 (oral; top 1.2%) <br/>
-[paper](https://www.cs.jhu.edu/~alanlab/Pubs23/li2023suprem.pdf) | [code](https://github.com/MrGiovanni/SuPreM) | [slides](document/promotion_slides.pdf) | [poster](document/dom_wse_poster.pdf) | [talk](https://vtizr.xetslk.com/s/1HUGNo
-) | [news](https://www.cs.jhu.edu/news/ai-and-radiologists-unite-to-map-the-abdomen/)
+[Tiange Xiang](https://tiangexiang.github.io/)<sup>1</sup>, [Yixiao Zhang](https://0-scholar-google-com.brum.beds.ac.uk/citations?user=lU3wroMAAAAJ&hl=fi)<sup>2</sup>, [Yongyi Lu](https://scholar.google.com/citations?user=rIJ99V4AAAAJ&hl=en&oi=ao)<sup>2</sup>, [Alan L. Yuille](https://www.cs.jhu.edu/~ayuille/)<sup>2</sup>, [Chaoyi Zhang](https://chaoyivision.github.io/)<sup>1</sup>, [Weidong Cai](https://weidong-tom-cai.github.io/)<sup>1</sup>, and [Zongwei Zhou](https://www.zongweiz.com)<sup>2</sup> <br/>
+<sup>1</sup>University of Sydney,  <sup>2</sup>Johns Hopkins University <br/>
+Transactions on Pattern Analysis and Machine Intelligence <br/>
+[paper](https://www.cs.jhu.edu/~alanlab/Pubs24/xiang2024exploiting.pdf) | [code](https://github.com/MrGiovanni/SimSID)
+
+**SQUID: Deep Feature In-Painting for Unsupervised Anomaly Detection** <br/>
+[Tiange Xiang](https://tiangexiang.github.io/)<sup>1</sup>, [Yixiao Zhang](https://0-scholar-google-com.brum.beds.ac.uk/citations?user=lU3wroMAAAAJ&hl=fi)<sup>2</sup>, [Yongyi Lu](https://scholar.google.com/citations?user=rIJ99V4AAAAJ&hl=en&oi=ao)<sup>2</sup>, [Alan L. Yuille](https://www.cs.jhu.edu/~ayuille/)<sup>2</sup>, [Chaoyi Zhang](https://chaoyivision.github.io/)<sup>1</sup>, [Weidong Cai](https://weidong-tom-cai.github.io/)<sup>1</sup>, and [Zongwei Zhou](https://www.zongweiz.com)<sup>2</sup> <br/>
+<sup>1</sup>University of Sydney,  <sup>2</sup>Johns Hopkins University <br/>
+CVPR, 2023 <br/>
+[paper](https://arxiv.org/pdf/2111.13495.pdf) | [code](https://github.com/tiangexiang/SQUID)
 
 ## Training
 
