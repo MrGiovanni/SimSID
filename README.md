@@ -51,6 +51,13 @@ If you find this work useful for your research, please consider citing it.
   journal={arXiv preprint arXiv:2403.08689},
   year={2024}
 }
+
+@article{xiang2023painting,
+  title={In-painting Radiography Images for Unsupervised Anomaly Detection},
+  author={Xiang, Tiange and Liu, Yongyi and Yuille, Alan L and Zhang, Chaoyi and Cai, Weidong and Zhou, Zongwei},
+  journal={IEEE/CVF Converence on Computer Vision and Pattern Recognition},
+  year={2023}
+}
 ```
 
 ## Acknowledgements
