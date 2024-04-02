@@ -21,6 +21,46 @@ TPAMI <br/>
 CVPR, 2023 <br/>
 [paper](https://arxiv.org/pdf/2111.13495.pdf) | [code](https://github.com/tiangexiang/SQUID)
 
+## Dependencies
+
+Please clone our environment using the following command:
+
+```
+conda env create -f environment.yml
+conda activate simsid
+```
+
+## File Structures
+
+* ```dataloader/```: dataloaders for zhanglab, chexpert, and digitanotamy.
+* ```models/```: models for SimSID, inpainting block, all kinds of memory, basic modules, and discriminator.
+* ```configs/```: configure files for different experiments, based on the base configure class.
+
+
+## Usage
+
+### Data
+
+**ZhangLab Chest X-ray**
+
+Please download the offical training/testing and our validation splits from [google drive](https://drive.google.com/file/d/1kgYtvVvyfPnQnrPhhLt50ZK9SnxJpriC/view?usp=sharing), and unzip it to anywhere you like.
+
+**Stanford ChexPert**
+
+Please download the offical training/validation and our testing splits from [google drive](https://drive.google.com/file/d/14pEg9ch0fsice29O8HOjnyJ7Zg4GYNXM/view?usp=sharing), and unzip it to anywhere you like.
+
+### Configs
+
+Different experiments are controlled by configure files, which are in ```configs/```. 
+
+All configure files are inherited from the base configure file: ```configs/base.py```, we suggest you to take a look at this base file first, and **change the dataset root path in your machine**.
+
+Then, you can inherite the base configure class and change settings as you want. 
+
+We provide our default configures for ZhangLab: ```configs/zhang_dev.py```, CheXpert: ```configs/chexpert_best.py```, and COVIDx: ```configs/covidx_dev.py```.
+
+The path to a configure file needs to be passed to the program for training.
+
 ## Training
 
 We provide a training script main.py. This script can be used to train an unsupervised anomaly detection model on a dataset (ZhangLab, CheXpert or COVIDx) by specifying a model config:
