@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Training artifacts
+checkpoints/
+runs/
+*.pth
+*.ckpt
+logs/
+
+# Editors
+.idea/
+.vscode/

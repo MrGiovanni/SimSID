@@ -1,0 +1,100 @@
+cff-version: 1.2.0
+message: "If you use SimSID, please cite the TPAMI 2024 paper below."
+title: "SimSID: Unsupervised Anomaly Detection in Chest Radiography"
+abstract: >-
+  SimSID is an unsupervised anomaly detection model for chest X-ray images. It exploits the
+  structural consistency of chest anatomy: because radiography imaging protocols focus on
+  particular body regions, normal chest radiographs share recurrent anatomical patterns.
+  SimSID formulates anomaly detection as an image reconstruction task built from a
+  space-aware memory matrix and an in-painting block in feature space, taxonomizing ingrained
+  anatomical structures into recurrent visual patterns during training and identifying unseen
+  or modified patterns as anomalies at inference. It requires no anomaly labels during
+  training. On the ZhangLab Chest X-ray, COVIDx, and Stanford CheXpert benchmarks, SimSID
+  improves the area under the curve over the previous state of the art by 8.0, 5.0, and 9.9
+  points respectively. This work is variously described as unsupervised anomaly detection,
+  out-of-distribution detection, one-class learning, novelty detection, and normality
+  modeling in medical imaging. SimSID is the IEEE TPAMI journal extension of SQUID, which
+  appeared at CVPR 2023.
+type: software
+license: CC-BY-NC-ND-4.0
+repository-code: "https://github.com/MrGiovanni/SimSID"
+keywords:
+  - unsupervised anomaly detection
+  - out-of-distribution detection
+  - chest radiography
+  - chest X-ray
+  - medical imaging
+  - memory network
+  - image inpainting
+  - computer-aided diagnosis
+authors:
+  - family-names: "Xiang"
+    given-names: "Tiange"
+  - family-names: "Zhang"
+    given-names: "Yixiao"
+  - family-names: "Lu"
+    given-names: "Yongyi"
+  - family-names: "Yuille"
+    given-names: "Alan L."
+  - family-names: "Zhang"
+    given-names: "Chaoyi"
+  - family-names: "Cai"
+    given-names: "Weidong"
+  - family-names: "Zhou"
+    given-names: "Zongwei"
+    orcid: "https://orcid.org/0000-0002-3154-9851"
+preferred-citation:
+  type: article
+  title: "Exploiting Structural Consistency of Chest Anatomy for Unsupervised Anomaly Detection in Radiography Images"
+  authors:
+    - family-names: "Xiang"
+      given-names: "Tiange"
+    - family-names: "Zhang"
+      given-names: "Yixiao"
+    - family-names: "Lu"
+      given-names: "Yongyi"
+    - family-names: "Yuille"
+      given-names: "Alan L."
+    - family-names: "Zhang"
+      given-names: "Chaoyi"
+    - family-names: "Cai"
+      given-names: "Weidong"
+    - family-names: "Zhou"
+      given-names: "Zongwei"
+      orcid: "https://orcid.org/0000-0002-3154-9851"
+  journal: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+  volume: 46
+  issue: 9
+  start: 6070
+  end: 6081
+  year: 2024
+  doi: "10.1109/TPAMI.2024.3382009"
+references:
+  - type: conference-paper
+    title: "SQUID: Deep Feature In-Painting for Unsupervised Anomaly Detection"
+    authors:
+      - family-names: "Xiang"
+        given-names: "Tiange"
+      - family-names: "Zhang"
+        given-names: "Yixiao"
+      - family-names: "Lu"
+        given-names: "Yongyi"
+      - family-names: "Yuille"
+        given-names: "Alan L."
+      - family-names: "Zhang"
+        given-names: "Chaoyi"
+      - family-names: "Cai"
+        given-names: "Weidong"
+      - family-names: "Zhou"
+        given-names: "Zongwei"
+    collection-title: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+    start: 23890
+    end: 23901
+    year: 2023
+identifiers:
+  - type: other
+    value: "arXiv:2403.08689"
+    description: "Preprint of the TPAMI paper"
+  - type: other
+    value: "arXiv:2111.13495"
+    description: "Preprint of the CVPR 2023 SQUID paper"
