@@ -47,7 +47,7 @@ class Config(BaseConfig):
         # GAN
         self.gan_lr = 1e-4
         self.discriminator_type = 'basic'
-        self.enbale_gan = 0 #100
+        self.enable_gan = 0 #100
         self.lambda_gp = 10.
         self.size = 4
         self.num_layers = 4

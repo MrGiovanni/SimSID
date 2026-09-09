@@ -47,7 +47,7 @@ opt = CONFIG.opt(model.parameters(), lr=CONFIG.lr, eps=1e-7, betas=(0.5, 0.999),
 scheduler = CONFIG.scheduler(opt, **CONFIG.scheduler_args)
 
 # for discriminator
-if (CONFIG.enbale_gan is not None and CONFIG.enbale_gan >= 0):
+if (CONFIG.enable_gan is not None and CONFIG.enable_gan >= 0):
     discriminator = build_disc(CONFIG).cuda()
     opt_d = CONFIG.opt(discriminator.parameters(), betas=(0.5, 0.999), lr=CONFIG.gan_lr)
     # scheduler_d = CONFIG.scheduler_d(opt_d, **CONFIG.scheduler_args_d)
@@ -68,7 +68,7 @@ def main():
     for epoch in range(1, CONFIG.epochs + 1):
         start_time = time.time()
         # when GAN training is disabled
-        if CONFIG.enbale_gan is None or epoch < CONFIG.enbale_gan:
+        if CONFIG.enable_gan is None or epoch < CONFIG.enable_gan:
             train_loss = train(CONFIG.train_loader, epoch)
             val_loss = {'recon_l1': 0.}
             log_loss(log_file, epoch, train_loss, val_loss)
@@ -117,7 +117,7 @@ def main():
                 best_auc = results['auc']
                 best_epoch = epoch
                 save_image(os.path.join(save_path, 'best'), zip(reconstructed, inputs))
-                if CONFIG.enbale_gan is not None:
+                if CONFIG.enable_gan is not None:
                     torch.save(discriminator.state_dict(), os.path.join('checkpoints',args.exp,'discriminator.pth'))
                 torch.save(model.state_dict(), os.path.join('checkpoints',args.exp,'model.pth'))
                 log(log_file, 'save model!')
@@ -126,7 +126,7 @@ def main():
             log_loss(log_file, epoch, train_loss, {})
 
         if epoch % 50 == 0:
-            if CONFIG.enbale_gan is not None:
+            if CONFIG.enable_gan is not None:
                 torch.save(discriminator.state_dict(), os.path.join('checkpoints', args.exp, f'discriminator_epoch{epoch}.pth'))
             torch.save(model.state_dict(), os.path.join('checkpoints', args.exp, f'model_epoch{epoch}.pth'))
 
