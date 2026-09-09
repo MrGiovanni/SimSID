@@ -116,7 +116,7 @@ Experiments are driven by config files in `configs/`. Every config inherits from
 | `configs/covidx_dev.py` | COVIDx |
 
 ```bash
-python main.py --config zhang_dev.py --exp experiment_name
+python main.py --config zhang_dev --exp experiment_name
 ```
 
 Checkpoints, TensorBoard logs, and sample test images are written to `checkpoints/<exp>/`.

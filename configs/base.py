@@ -31,13 +31,13 @@ class BaseConfig():
 
         # GAN
         self.discriminator_type = 'basic'
-        self.enbale_gan = 0 #100
+        self.enable_gan = 0 #100
         self.lambda_gp = 10
         self.size = 4
         self.n_critic = 1
         self.sample_interval = 1000
         self.scheduler_d = torch.optim.lr_scheduler.MultiStepLR
-        self.scheduler_args_d = dict(milestones=[200-self.enbale_gan, 300-self.enbale_gan], gamma=0.2)
+        self.scheduler_args_d = dict(milestones=[200-self.enable_gan, 300-self.enable_gan], gamma=0.2)
 
         # model
         self.num_in_ch = 1
